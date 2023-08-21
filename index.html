@@ -58,6 +58,28 @@
             >
           </li>
         </ul>
+
+        <!-- Hamburger Menu Open -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger-open"></use>
+          </svg>
+        </button>
+
+        <!-- Hamburger Menu Close Icon and Navigations-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          
+          <!-- Hamburger Menu Close Icon-->
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/icons.svg#icon-hamburger-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -149,7 +171,7 @@
       <!-- Section 2 -->
       <section class="section no-top-padding">
         <div class="container">
-          <h2 class="section-title">What Are We Doing</h2>
+          <h2 class="section-title section-title1">What Are We Doing</h2>
           <ul class="what-we-do list">
             <li class="item">
               <img
@@ -189,8 +211,9 @@
           <ul class="team list">
             <li class="item">
               <img
-                class="image"
+              srcset="./images/Mark.jpg 1x, ../images/Mark@2x.jpg 2x "
                 src="./images/Mark.jpg"
+                class="image"
                 alt="Mark Guerrero"
                 width="270"
                 height="260"
@@ -259,8 +282,9 @@
 
             <li class="item">
               <img
-                class="image"
+                srcset="./images/Tom.jpg 1x, ./images/Tom@2x.jpg 2x"
                 src="./images/Tom.jpg"
+                class="image"
                 alt="Tom Ford"
                 width="270"
                 height="260"
@@ -329,8 +353,9 @@
 
             <li class="item">
               <img
-                class="image"
+                srcset="./images/Camila.jpg 1x, ./images/Camila@2x.jpg 2x"
                 src="./images/Camila.jpg"
+                class="image"
                 alt="Camila Garcia"
                 width="270"
                 height="260"
@@ -399,8 +424,9 @@
 
             <li class="item">
               <img
-                class="image"
+                srcset="./images/Daniel.jpg 1x, ./images/Daniel@2x.jpg 2x"
                 src="./images/Daniel.jpg"
+                class="image"
                 alt="Daniel Wilson"
                 width="270"
                 height="260"
@@ -695,5 +721,8 @@
 
     <!-- MODAL SCRIPT -->
     <script src="./js/modal.js"></script>
+
+    <!-- HAMBURGER MENU SCRIPT -->
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
